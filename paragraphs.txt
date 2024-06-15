@@ -1,0 +1,81 @@
+
+
+R is a programming language for statistical computing and data visualization. It has been adopted in the fields of data mining, bioinformatics, and data analysis.[8]
+The core R language is augmented by a large number of extension packages, containing reusable code, documentation, and sample data.
+
+R software is open-source and free software. It is licensed by the GNU Project and available under the GNU General Public License.[3] It is written primarily in C, Fortran, and R itself. Precompiled executables are provided for various operating systems.
+
+As an interpreted language, R has a native command line interface. Moreover, multiple third-party graphical user interfaces are available, such as RStudio—an integrated development environment—and Jupyter—a notebook interface.
+
+R was started by professors Ross Ihaka and Robert Gentleman as a programming language to teach introductory statistics at the University of Auckland.[9] The language was inspired by the S programming language, with most S programs able to run unaltered in R.[6] The language was also inspired by Scheme's lexical scoping, allowing for local variables.[1]
+The name of the language, R, comes from being both an S language successor as well as the shared first letter of the authors, Ross and Robert.[10] In August 1993, Ihaka and Gentleman posted a binary of R on StatLib — a data archive website. At the same time, they announced the posting on the s-news mailing list.[11] On December 5, 1997, R became a GNU project when version 0.60 was released.[12] On February 29, 2000, the first official 1.0 version was released.[13]
+R packages are collections of functions, documentation, and data that expand R.[14] For example, packages add report features such as RMarkdown, Quarto, knitr and Sweave. Easy package installation and use have contributed to the language's adoption in data science.[15]
+The Comprehensive R Archive Network (CRAN) was founded in 1997 by Kurt Hornik and Fritz Leisch to host R's source code, executable files, documentation, and user-created packages.[16] Its name and scope mimic the Comprehensive TeX Archive Network and the Comprehensive Perl Archive Network.[16] CRAN originally had three mirrors and 12 contributed packages.[17] As of June 2024, it has 104 mirrors[18] and 20,853 contributed packages.[19] Packages are also available on repositories R-Forge, Omegahat, and GitHub.
+
+The Task Views on the CRAN website lists packages in fields such as finance, genetics, high-performance computing, machine learning, medical imaging, meta-analysis, social sciences, and spatial statistics.
+
+The Bioconductor project provides packages for genomic data analysis, complementary DNA, microarray, and high-throughput sequencing methods.
+
+Packages add the capability to implement various statistical techniques such as linear, generalized linear and nonlinear modeling, classical statistical tests, spatial analysis, time-series analysis, and clustering.
+
+An example package is the tidyverse package. Its focus is having a common interface around accessing and processing data contained in a data frame data structure, a two-dimensional table of rows and columns called "tidy data".[20] Each function in the package is designed to couple together all the other functions in the package.[21]
+Installing a package occurs only once. To install tidyverse:[21]
+To instantiate the functions, data, and documentation of a package, execute the library() function. To instantiate tidyverse:[a]
+R comes installed with a command line console. Available for installation are various integrated development environments (IDE). IDEs for R include R.app (OSX/macOS only), Rattle GUI, R Commander, RKWard, RStudio, and Tinn-R.
+
+General purpose IDEs that support R include Eclipse via the StatET plugin and Visual Studio via R Tools for Visual Studio.
+
+Editors that support R include Emacs, Vim via the Nvim-R plugin, Kate, LyX via Sweave, WinEdt (website), and Jupyter (website).
+
+Scripting languages that support R include Python (website), Perl (website), Ruby (source code), F# (website), and Julia (source code).
+
+General purpose programming languages that support R include Java via the Rserve socket server, and .NET C# (website).
+
+Statistical frameworks which use R in the background include Jamovi and JASP.
+
+The R Core Team was founded in 1997 to maintain the R source code. The R Foundation for Statistical Computing was founded in April 2003 to provide financial support. The R Consortium is a Linux Foundation project to develop R infrastructure.
+
+The R Journal is an open access, academic journal which features short to medium-length articles on the use and development of R. It includes articles on packages, programming tips, CRAN news, and foundation news.
+
+The R community hosts many conferences and in-person meetups. These groups include:
+
+The main R implementation is written primarily in C, Fortran, and R itself. Other implementations include:
+
+Microsoft R Open (MRO) was an R implementation. As of 30 June 2021, Microsoft started to phase out MRO in favor of the CRAN distribution.[24]
+ 
+
+Although R is an open-source project, some companies provide commercial support:
+
+"Hello, World!" program:
+
+The following examples illustrate the basic syntax of the language and use of the command-line interface. (An expanded list of standard language features can be found in the R manual, "An Introduction to R".[25])
+
+In R, the generally preferred assignment operator is an arrow made from two characters <-, although = can be used in some cases.[26]
+One of R's strengths is the ease of creating new functions.[27] Objects in the function body remain local to the function, and any data type may be returned. In R, almost all functions and all user-defined functions are closures.[28]
+Create a function:
+
+Usage output:
+
+It is possible to define functions to be used as infix operators with the special syntax `%name%` where "name" is the function variable name:
+
+Since version 4.1.0 functions can be written in a short notation, which is useful for passing anonymous functions to higher-order functions:[29]
+In R version 4.1.0, a native pipe operator, |>, was introduced.[30] This operator allows users to chain functions together one after another, instead of a nested function call.
+
+Another alternative to nested functions, in contrast to using the pipe character, is using intermediate objects. However, some argue that using the pipe operator will produce code that is easier to read.[21]
+The R language has native support for object-oriented programming. There are two native frameworks, the so-called S3 and S4 systems. The former, being more informal, supports single dispatch on the first argument and objects are assigned to a class by just setting a "class" attribute in each object. The latter is a Common Lisp Object System (CLOS)-like system of formal classes (also derived from S) and generic methods that supports multiple dispatch and multiple inheritance[31]
+In the example, summary is a generic function that dispatches to different methods depending on whether its argument is a numeric vector or a "factor":
+
+The R language has built-in support for data modeling and graphics. The following example shows how R can generate and plot a linear model with residuals.
+
+Output:
+
+This Mandelbrot set example highlights the use of complex numbers. It models the first 20 iterations of the equation z = z2 + c, where c represents different complex constants.
+
+Install the package that provides the write.gif() function beforehand:
+
+R Source code:
+
+All R version releases from 2.14.0 onward have codenames that make reference to Peanuts comics and films.[32][33][34]
+In 2018, core R developer Peter Dalgaard presented a history of R releases since 1997.[35] Some notable early releases before the named releases include:
+
+The idea of naming R version releases was inspired by the Debian and Ubuntu version naming system. Dalgaard also noted that another reason for the use of Peanuts references for R codenames is because, "everyone in statistics is a P-nut".[35]
