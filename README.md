@@ -332,3 +332,8 @@ Error in infobox %>% rename(Attribute = 1, Value = 2) %>% filter(!is.na(Attribut
   no se pudo encontrar la función "%>%"
 > save.image("C:/Users/devor/OneDrive/Escritorio/R.RData")
 > View(first_table)
+
+![image](https://github.com/Devora500/ESCENARIOS-PROYECTOS/assets/172845093/bc94a63d-7112-48d3-bad1-8f915c68caea)
+![image](https://github.com/Devora500/ESCENARIOS-PROYECTOS/assets/172845093/6588ca03-97e0-4d0c-b7c3-1318f78dfdef)
+![image](https://github.com/Devora500/ESCENARIOS-PROYECTOS/assets/172845093/1cc26e4b-be01-475d-abf7-b6b762cd9d88)
+![image](https://github.com/Devora500/ESCENARIOS-PROYECTOS/assets/172845093/545c7c6d-a6c6-4264-9785-33260a9819ab)
